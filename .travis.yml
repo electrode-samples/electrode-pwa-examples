@@ -15,13 +15,14 @@ branches:
     - master
 
 before_install:
+  - cd $TEST_DIR
+  - npm install -g gulp lighthouse
   - export DISPLAY=:99.0
   - export LIGHTHOUSE_CHROMIUM_PATH="$(pwd)/chrome-linux/chrome"
   - sh -e /etc/init.d/xvfb start
   - wget 'https://download-chromium.appspot.com/dl/Linux_x64?type=snapshots' -O chrome.zip && unzip -o chrome.zip
 
 before_script:
-  - cd $TEST_DIR && npm install gulp lighthouse
   - npm run build
   - npm run start &
   - sleep 10
