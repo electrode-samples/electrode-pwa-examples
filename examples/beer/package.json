@@ -1,9 +1,8 @@
 {
-  "name": "electrode-pwa-examples-beer",
+  "name": "electrode-app-with-electrode-modules",
   "version": "0.0.0",
-  "description": "electrode-pwa-examples-beer",
+  "description": "electrode app with electrode modules",
   "homepage": "https://github.com/electrode-io",
-  "private": true,
   "contributors": [],
   "files": [
     "lib"
@@ -16,7 +15,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/docs-code-examples-electrode-io/electrode-pwa-examples.git"
+    "url": "https://github.com/electrode-io/electrode-app-with-electrode-modules.git"
   },
   "license": "Apache-2.0",
   "scripts": {
@@ -24,12 +23,17 @@
     "coverage": "gulp check",
     "dev": "gulp dev",
     "start": "gulp server",
-    "test": "gulp check"
+    "test": "gulp check",
+    "nuke": "rm -rf node_modules; rm -rf dist; rm -rf .isomorphic-loader-config.json",
+    "heroku-postbuild": "gulp build"
+  },
+  "engines": {
+    "node": "^7.0.0"
   },
   "dependencies": {
     "above-the-fold-only-server-render": "^1.0.2",
     "bluebird": "^3.4.6",
-    "electrode-archetype-react-app": "^1.4.0-0",
+    "electrode-archetype-react-app": "https://github.com/Aweary/electrode-archetype-react-app.git#pwa",
     "electrode-csrf-jwt": "^1.0.0",
     "electrode-react-ssr-caching": "^0.1.5",
     "electrode-redux-router-engine": "^1.0.0",
@@ -41,10 +45,13 @@
     "redux-thunk": "^2.1.0"
   },
   "devDependencies": {
-    "electrode-archetype-react-app-dev": "^1.4.0-0",
+    "electrode-archetype-react-app-dev": "^1.0.0",
+    "favicons-webpack-plugin": "^0.0.7",
     "gulp": "^3.9.1",
     "redux-devtools": "^3.3.1",
     "redux-devtools-dock-monitor": "^1.1.1",
-    "redux-devtools-log-monitor": "^1.0.11"
+    "redux-devtools-log-monitor": "^1.0.11",
+    "sw-precache-webpack-plugin": "^0.5.1",
+    "web-app-manifest-loader": "^0.1.1"
   }
 }
