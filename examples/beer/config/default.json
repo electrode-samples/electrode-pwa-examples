@@ -6,7 +6,6 @@
         "expiresIn": 60
       }
     },
-    "./server/plugins/csrf": {},
     "webapp": {
       "module": "./server/plugins/webapp",
       "options": {
