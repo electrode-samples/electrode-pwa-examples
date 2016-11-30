@@ -10,7 +10,7 @@ module.exports = {
       handler: "fastest",
       urlPattern: "^https:\/\/fonts\.gstatic\.com"
     }],
-    staticFileGlobs: ['dist/**/*']
+    staticFileGlobs: ['dist/js/*.{js,css,png}']
   },
   manifest: {
     background: "#007dc6",
