@@ -12,9 +12,7 @@ export class Home extends React.Component {
       <div>
         <Header navItemsTop={data.navItemsTop} />
         <Advertisement />
-        <Product
-        breadcrumbLinks={data.breadcrumbLinks}
-        title={data.productTitle} />
+        <Product product={data.product} />
       </div>
     );
   }

@@ -1,11 +1,9 @@
 .product {
+  box-sizing: border-box;
   padding: 4px 16px;
+  width: 100%;
 }
 
 .productWrapper {
 
-}
-
-.productTitle {
-  font-size: 1.6rem;
 }

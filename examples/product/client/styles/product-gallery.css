@@ -1,0 +1,9 @@
+.productGallery {
+  display: inline-block;
+  vertical-align: top;
+  width: 50%;
+}
+
+.productTitle {
+  font-size: 1.6rem;
+}

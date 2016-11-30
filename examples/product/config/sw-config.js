@@ -2,7 +2,13 @@ module.exports = {
   cache: {
     runtimeCaching: [{
       handler: "fastest",
-      urlPattern: /\/$/
+      urlPattern: "\/$"
+    }, {
+      handler: "fastest",
+      urlPattern: "^https:\/\/fonts\.googleapis\.com"
+    }, {
+      handler: "fastest",
+      urlPattern: "^https:\/\/fonts\.gstatic\.com"
     }],
     staticFileGlobs: ['dist/**/*']
   },
@@ -10,7 +16,7 @@ module.exports = {
     background: "#FFFFFF",
     logo: "./images/walmart-icon.png",
     title: "Electrode Progressive Product",
-    short_name: "EPP",
+    short_name: "Electrode Product",
     theme_color: "#FFFFFF"
   }
 };

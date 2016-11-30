@@ -11,16 +11,6 @@ function storeInitializer(req) {
   if(req.path === "/") {
     initialState = {
       data: {
-        breadcrumbLinks: [{
-          href: "",
-          text: "Video Games"
-        }, {
-          href: "",
-          text: "PlayStation 4"
-        }, {
-          href: "",
-          text: "PlayStation 4 Consoles"
-        }],
         navItemsTop: [{
           icon: "credit_card",
           name: "Gift Cards"
@@ -46,7 +36,19 @@ function storeInitializer(req) {
           icon: "restaurant_menu",
           name: "Grocery Pickup"
         }],
-        productTitle: "PlayStation Pro 1TB Gaming Console"
+        product: {
+          breadcrumb: [{
+            href: "",
+            text: "Video Games"
+          }, {
+            href: "",
+            text: "PlayStation 4"
+          }, {
+            href: "",
+            text: "PlayStation 4 Consoles"
+          }],
+          title: "PlayStation Pro 1TB Gaming Console"
+        }
       }
     };
   } else {

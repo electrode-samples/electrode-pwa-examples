@@ -1,5 +1,6 @@
 import React, {PropTypes} from "react";
 import Breadcrumb from "./breadcrumb";
+import ProductGallery from "./product-gallery";
 import styles from "../styles/product.css";
 
 export default class Product extends React.Component {
@@ -7,31 +8,18 @@ export default class Product extends React.Component {
     return (
       <div className={styles.product}>
         <div className={styles.productWrapper}>
-          <Breadcrumb links={this.props.breadcrumbLinks} />
-          {this.renderProductTitle()}
+          <Breadcrumb links={this.props.product.breadcrumb} />
+          <ProductGallery product={this.props.product} />
         </div>
       </div>
-    );
-  }
-
-  renderProductTitle() {
-    return (
-      <h2 className={styles.productTitle}>{this.props.title}</h2>
     );
   }
 }
 
 Product.propTypes = {
-  breadcrumbLinks: PropTypes.arrayOf(
-    PropTypes.shape({
-      href: PropTypes.string,
-      text: PropTypes.string
-    })
-  ),
-  title: PropTypes.string
+  product: PropTypes.object
 };
 
 Product.defaultProps = {
-  breadcrumbLinks: [],
-  title: ""
+  product: {}
 };
