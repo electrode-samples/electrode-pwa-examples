@@ -1,12 +1,13 @@
 @import "./variables.css";
 
 .breadcrumb {
-  display: inline-block;
-  font-size: 1rem;
+  font-size: 0.85rem;
   font-weight: 600;
 }
 
 .breadcrumbLink {
+  transition: opacity 0.25s;
+
   & a {
     color: var(--blue);
     margin-right: 6px;
@@ -23,5 +24,9 @@
     & i {
       display: none;
     }
+  }
+
+  &:hover {
+    opacity: 0.75;
   }
 }

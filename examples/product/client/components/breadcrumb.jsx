@@ -10,7 +10,7 @@ const Breadcrumb = (props) => {
   ));
 
   return (
-    <div className={styles.breadcrumbs}>
+    <div className={styles.breadcrumb}>
       {breadcrumbs}
     </div>
   );

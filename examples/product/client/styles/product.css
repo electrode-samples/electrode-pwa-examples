@@ -1,6 +1,8 @@
 .product {
   box-sizing: border-box;
   padding: 4px 16px;
+  max-width: 1364px;
+  margin: 0 auto;
   width: 100%;
 }
 

@@ -62,6 +62,8 @@ function storeInitializer(req) {
             duration: "4-year",
             price: "$53.00"
           }],
+          madeBy: "Sony",
+          reviewCount: 15,
           shippedByMessage: "Sold & Shipped by",
           shippedByLink: {
             href: "",
@@ -69,6 +71,8 @@ function storeInitializer(req) {
           },
           shipping: "FREE",
           shippingDateExpedited: today.add(2, "days").format("dddd, MMM D"),
+          starRating: 5,
+          storeNumber: 123456789,
           title: "PlayStation Pro 1TB Gaming Console"
         }
       }

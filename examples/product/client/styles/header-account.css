@@ -56,3 +56,9 @@
     font-size: 2rem;
   }
 }
+
+@media (max-width: 1080px) {
+  .headerAccount {
+    display: none;
+  }
+}

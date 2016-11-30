@@ -1,0 +1,31 @@
+@import "./variables.css";
+
+.galleryNav {
+  display: inline-block;
+  box-sizing: border-box;
+  padding-left: 20px;
+  vertical-align: top;
+  width: 10%;
+}
+
+.galleryNavItem {
+  border: 1px solid var(--gray);
+  border-radius: 4px;
+  cursor: pointer;
+  display: block;
+  margin: 20px 0;
+  padding: 6px;
+  height: 50px;
+  width: 50px;
+
+  &:hover {
+    border-color: var(--green);
+  }
+}
+
+.galleryImage {
+  display: inline-block;
+  text-align: center;
+  vertical-align: top;
+  width: 90%;
+}

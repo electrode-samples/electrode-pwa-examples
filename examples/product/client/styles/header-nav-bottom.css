@@ -58,3 +58,9 @@
   margin-right: 30px;
   float: right;
 }
+
+@media (max-width: 1080px) {
+  .headerNavBottom {
+    display: none;
+  }
+}
