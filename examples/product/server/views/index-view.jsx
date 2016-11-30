@@ -1,12 +1,15 @@
 import ReduxRouterEngine from 'electrode-redux-router-engine';
 import React from 'react';
 import {routes} from "../../client/routes";
-const Promise = require("bluebird");
+import moment from "moment";
 import {createStore} from "redux";
 import rootReducer from "../../client/reducers";
 
+const Promise = require("bluebird");
+
 function storeInitializer(req) {
   let initialState;
+  const today = moment();
 
   if(req.path === "/") {
     initialState = {
@@ -47,6 +50,25 @@ function storeInitializer(req) {
             href: "",
             text: "PlayStation 4 Consoles"
           }],
+          price: {
+            cents: "00",
+            dollars: "399",
+            currency: "$"
+          },
+          carePlans: [{
+            duration: "3-Year",
+            price: "$39.00"
+          }, {
+            duration: "4-year",
+            price: "$53.00"
+          }],
+          shippedByMessage: "Sold & Shipped by",
+          shippedByLink: {
+            href: "",
+            text: "Walmart"
+          },
+          shipping: "FREE",
+          shippingDateExpedited: today.add(2, "days").format("dddd, MMM D"),
           title: "PlayStation Pro 1TB Gaming Console"
         }
       }

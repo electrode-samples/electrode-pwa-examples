@@ -13,10 +13,10 @@ module.exports = {
     staticFileGlobs: ['dist/**/*']
   },
   manifest: {
-    background: "#FFFFFF",
+    background: "#007dc6",
     logo: "./images/walmart-icon.png",
     title: "Electrode Progressive Product",
     short_name: "Electrode Product",
-    theme_color: "#FFFFFF"
+    theme_color: "#007dc6"
   }
 };
