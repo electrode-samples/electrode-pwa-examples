@@ -1,5 +1,5 @@
 import React, {PropTypes} from "react";
-import advertisementImage from "../images/advertisement.png";
+import advertisementImage from "../images/advertisement-1.png";
 import styles from "../styles/advertisement.css";
 
 const Advertisement = () => {
