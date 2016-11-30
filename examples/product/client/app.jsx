@@ -9,6 +9,11 @@ import rootReducer from "./reducers";
 import {routes} from "./routes";
 import "./styles/base.css";
 
+
+require.ensure(["./register-sw"], (require) => {
+  require("./register-sw")();
+}, "register-sw");
+
 const enhancer = compose(
   // Add middlewares you want to use in development:
   // applyMiddleware(d1, d2, d3),
