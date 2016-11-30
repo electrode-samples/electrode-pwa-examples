@@ -1,0 +1,30 @@
+@import "./variables.css";
+
+.headerNavTop {
+  color: var(--white);
+  font-size: 0.75rem;
+  height: 32px;
+  line-height: 32px;
+  width: 100%;
+
+  & i {
+    font-size: 1.2rem;
+    margin-right: 4px;
+    vertical-align: middle;
+  }
+}
+
+.headerNavTopWrapper {
+  float: right;
+}
+
+.headerNavTopItem {
+  display: inline-block;
+  cursor: pointer;
+  margin-right: 24px;
+  transition: opacity 0.25s;
+
+  &:hover {
+    opacity: 0.75;
+  }
+}

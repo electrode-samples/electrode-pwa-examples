@@ -1,0 +1,27 @@
+@import "./variables.css";
+
+.breadcrumb {
+  display: inline-block;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.breadcrumbLink {
+  & a {
+    color: var(--blue);
+    margin-right: 6px;
+    text-decoration: none;
+  }
+
+  & i {
+    font-size: 0.85rem;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+
+  &:last-child {
+    & i {
+      display: none;
+    }
+  }
+}

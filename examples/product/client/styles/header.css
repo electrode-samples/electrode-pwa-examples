@@ -1,0 +1,11 @@
+@import "./variables.css";
+
+.header {
+  background-color: var(--blue);
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+.headerWrapper {
+  position: relative;
+}
