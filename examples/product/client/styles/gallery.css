@@ -29,3 +29,18 @@
   vertical-align: top;
   width: 90%;
 }
+
+@media (max-width: 1080px) {
+  .galleryNav {
+    display: none;
+  }
+
+  .galleryImage {
+    width: 100%;
+
+    & img {
+      height: 260px;
+      width: 260px;
+    }
+  }
+}

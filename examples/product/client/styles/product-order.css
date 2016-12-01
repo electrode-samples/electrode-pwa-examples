@@ -183,3 +183,18 @@
   padding: 0;
   outline: none;
 }
+
+@media (max-width: 1080px) {
+  .productOrder {
+    display: block;
+    width: 100%;
+  }
+
+  .productOrderShippingOptions {
+    display: none;
+  }
+
+  .productOrderAddToCartButton {
+    width: 50%;
+  }
+}

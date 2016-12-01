@@ -31,3 +31,24 @@
 .productGalleryMetaSection {
   margin-left: 12px;
 }
+
+@media (max-width: 1080px) {
+  .productGallery {
+    display: block;
+    width: 100%;
+  }
+
+  .productGalleryTitle {
+    font-size: 1.25rem;
+  }
+
+  .productGalleryMetaSection {
+    &:nth-child(3) {
+      display: none;
+    }
+
+    &:nth-child(4) {
+      display: none;
+    }
+  }
+}

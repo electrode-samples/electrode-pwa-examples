@@ -30,3 +30,9 @@
     opacity: 0.75;
   }
 }
+
+@media (max-width: 1080px) {
+  .breadcrumb {
+    display: none;
+  }
+}

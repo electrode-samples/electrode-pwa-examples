@@ -8,3 +8,14 @@
   margin-left: 20px;
   width: 200px;
 }
+
+@media (max-width: 1080px) {
+  .headerLogo {
+    background-size: cover;
+    box-sizing: border-box;
+    display: block;
+    height: 24px;
+    margin: 0 auto 8px auto;
+    width: 98px;
+  }
+}

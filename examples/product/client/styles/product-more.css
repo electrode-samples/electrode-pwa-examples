@@ -26,6 +26,7 @@
 .productMoreItemsItem {
   background-color: var(--white);
   border-radius: 4px;
+  cursor: pointer;
   display: inline-block;
   margin: 10px 8px 0 8px;
   height: 266px;
@@ -63,4 +64,10 @@
 .productMoreItemsRating {
   color: var(--blue);
   margin-left: 14px;
+}
+
+@media (max-width: 1080px) {
+  .productMoreTitle {
+    font-size: 1.25rem;
+  }
 }

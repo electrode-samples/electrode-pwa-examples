@@ -9,3 +9,9 @@
 .headerWrapper {
   position: relative;
 }
+
+@media (max-width: 1080px) {
+  .header {
+    padding: 10px;
+  }
+}
