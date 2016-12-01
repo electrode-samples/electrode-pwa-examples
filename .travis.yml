@@ -9,6 +9,7 @@ dist: trusty
 
 env:
   TEST_DIR=examples/beer
+  TEST_DIR=examples/product
 
 branches:
   only:
