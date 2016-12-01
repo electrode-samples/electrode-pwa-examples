@@ -16,7 +16,7 @@ module.exports = {
     staticFileGlobs: ['dist/js/*.{js,css,png,svg,jpg,gif}']
   },
   manifest: {
-    background: "#007dc6",
+    background_color: "#007dc6",
     logo: "./images/walmart-icon.png",
     title: "Electrode Progressive Product",
     short_name: "PWA Product",

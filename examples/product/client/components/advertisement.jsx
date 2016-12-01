@@ -6,7 +6,7 @@ const Advertisement = () => {
   return (
     <div className={styles.advertisement}>
       <a href="">
-        <img src={advertisementImage} />
+        <img src={advertisementImage} alt="ad" />
       </a>
     </div>
   );

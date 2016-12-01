@@ -22,6 +22,7 @@ export default class Gallery extends React.Component {
     const {images} = this.props;
     const navItems = images.map((image, i) => (
       <img
+        alt={i}
         className={styles.galleryNavItem}
         key={i}
         onMouseOver={this.handleMouseOverImage.bind(this, i)}
@@ -41,7 +42,7 @@ export default class Gallery extends React.Component {
 
     return (
       <div className={styles.galleryImage}>
-        <img src={images[selectedImage]} />
+        <img src={images[selectedImage]} alt="product" />
       </div>
     );
   }

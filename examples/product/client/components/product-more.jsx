@@ -44,7 +44,7 @@ class ProductMore extends React.Component {
 
     const items = product.moreCollection.map((item, i) => (
       <div className={styles.productMoreItemsItem} key={i}>
-        <img className={styles.productMoreItemsItemImage} src={productImages[i]} />
+        <img alt={i} className={styles.productMoreItemsItemImage} src={productImages[i]} />
         <div className={styles.productMoreItemsItemPrice}>
           <span className={styles.productMoreItemsItemPriceCurrency}>
             {item.currency}
