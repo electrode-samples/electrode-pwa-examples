@@ -1,7 +1,7 @@
-import React, {PropTypes} from "react";
+import React from "react";
 import styles from "../styles/header-nav-bottom.css";
 
-const HeaderNavBottom = (props) => {
+const HeaderNavBottom = () => {
   return (
     <nav className={styles.headerNavBottom}>
       <div className={styles.headerNavBottomDepartments}>
@@ -19,6 +19,6 @@ const HeaderNavBottom = (props) => {
       </div>
     </nav>
   );
-}
+};
 
 export default HeaderNavBottom;

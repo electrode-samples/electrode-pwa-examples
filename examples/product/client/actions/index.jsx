@@ -13,7 +13,7 @@ export const requestCollection = () => ({
 export const fetchCollection = () => (dispatch) => {
   dispatch(requestCollection());
 
-  return fetch(`/collection`)
+  return fetch("/collection")
     .then((res) => res.json())
     .then((json) => dispatch(receiveCollection(json)));
 };

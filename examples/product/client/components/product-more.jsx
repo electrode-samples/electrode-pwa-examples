@@ -23,7 +23,6 @@ class ProductMore extends React.Component {
   }
 
   render() {
-    const items = []
     const {title} = this.props;
 
     return (
@@ -39,12 +38,12 @@ class ProductMore extends React.Component {
 
     if (!product.moreCollection.length) {
       return (
-        <div className={styles.productMoreLoading}></div>
+        <div className={styles.productMoreLoading} />
       );
     }
 
     const items = product.moreCollection.map((item, i) => (
-      <div className={styles.productMoreItemsItem}>
+      <div className={styles.productMoreItemsItem} key={i}>
         <img className={styles.productMoreItemsItemImage} src={productImages[i]} />
         <div className={styles.productMoreItemsItemPrice}>
           <span className={styles.productMoreItemsItemPriceCurrency}>
@@ -72,10 +71,12 @@ class ProductMore extends React.Component {
 
 ProductMore.propTypes = {
   dispatch: PropTypes.func,
+  title: PropTypes.string,
   product: PropTypes.object
 };
 
 ProductMore.defaultProps = {
+  title: "",
   product: {}
 };
 

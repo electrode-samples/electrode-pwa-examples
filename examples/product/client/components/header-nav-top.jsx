@@ -16,7 +16,7 @@ const HeaderNavTop = (props) => {
       </div>
     </nav>
   );
-}
+};
 
 HeaderNavTop.propTypes = {
   navItems: PropTypes.arrayOf(PropTypes.shape({

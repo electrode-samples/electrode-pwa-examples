@@ -4,7 +4,7 @@ const data = require("./data");
 
 exports.register = (server, options, next) => {
   const getCollection = (request, reply) => {
-    reply({data: data});
+    reply({data});
   };
 
   server.route({

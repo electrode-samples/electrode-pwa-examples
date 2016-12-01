@@ -12,7 +12,7 @@ module.exports = [{
   price: "39.99",
   rating: 5,
   reviewCount: 23
-},{
+}, {
   currency: "$",
   image: "wwe.jpg",
   name: "WWE 2K17 (PS4)",

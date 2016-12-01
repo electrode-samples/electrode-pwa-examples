@@ -18,7 +18,7 @@ export default class ProductGallery extends React.Component {
         {this.renderProductMeta()}
         {this.renderProductGallery()}
       </section>
-    )
+    );
   }
 
   renderProductTitle() {

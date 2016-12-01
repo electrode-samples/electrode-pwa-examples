@@ -1,4 +1,4 @@
-import React, {PropTypes} from "react";
+import React from "react";
 import advertisementImage from "../images/advertisement-1.png";
 import styles from "../styles/advertisement.css";
 
@@ -10,6 +10,6 @@ const Advertisement = () => {
       </a>
     </div>
   );
-}
+};
 
 export default Advertisement;

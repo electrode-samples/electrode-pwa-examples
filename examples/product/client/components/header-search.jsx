@@ -1,4 +1,4 @@
-import React, {PropTypes} from "react";
+import React from "react";
 import styles from "../styles/header-search.css";
 
 const HeaderSearch = () => {
@@ -14,6 +14,6 @@ const HeaderSearch = () => {
       </div>
     </div>
   );
-}
+};
 
 export default HeaderSearch;

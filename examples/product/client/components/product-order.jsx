@@ -1,25 +1,27 @@
+/* global navigator */
+
 import React, {PropTypes} from "react";
 import styles from "../styles/product-order.css";
-import icon from '../images/walmart-icon-192x192.png';
-import badge from '../images/walmart-icon-72x72.png';
+import icon from "../images/walmart-icon-192x192.png";
+import badge from "../images/walmart-icon-72x72.png";
 
 export default class ProductOrder extends React.Component {
 
   componentDidMount() {
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.ready.then((registration) => {
-        registration.pushManager.subscribe({ userVisibleOnly: true })
-      })
+        registration.pushManager.subscribe({ userVisibleOnly: true });
+      });
     }
   }
 
   handleAddToCart() {
     if ("serviceWorker" in navigator) {
       navigator.serviceWorker.ready.then((registration) => {
-        registration.showNotification('Added to Cart', {
-          body: 'Your item has been added to your cart.',
-          icon: icon,
-          badge: badge
+        registration.showNotification("Added to Cart", {
+          body: "Your item has been added to your cart.",
+          icon,
+          badge
         });
       });
     }
@@ -37,7 +39,7 @@ export default class ProductOrder extends React.Component {
           {this.renderAddToCart()}
         </div>
       </section>
-    )
+    );
   }
 
   renderPrice() {
@@ -64,8 +66,8 @@ export default class ProductOrder extends React.Component {
       <div className={styles.productOrderShippedBy}>
         <span>{product.shippedByMessage} </span>
         <a
-        className={styles.productOrderShippedByLink}
-        href={product.shippedByLink.href}>
+          className={styles.productOrderShippedByLink}
+          href={product.shippedByLink.href}>
           {product.shippedByLink.text}
         </a>
       </div>

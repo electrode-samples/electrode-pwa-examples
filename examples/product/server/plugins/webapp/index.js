@@ -111,7 +111,7 @@ function makeRouteHandler(options, userContent) {
       const css = bundleCss();
       const cssLink = css ? `<link rel="stylesheet" href="${css}" />` : "";
       const font = "https://fonts.googleapis.com/icon?family=Material+Icons|Open+Sans";
-      const fontLink = `<link rel="stylesheet" href="${font}" />`
+      const fontLink = `<link rel="stylesheet" href="${font}" />`;
       return `${manifestLink}${cssLink}${fontLink}`;
     };
 

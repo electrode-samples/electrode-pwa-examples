@@ -22,10 +22,10 @@ export default class Gallery extends React.Component {
     const {images} = this.props;
     const navItems = images.map((image, i) => (
       <img
-      className={styles.galleryNavItem}
-      key={i}
-      onMouseOver={this.handleMouseOverImage.bind(this, i)}
-      src={image} />
+        className={styles.galleryNavItem}
+        key={i}
+        onMouseOver={this.handleMouseOverImage.bind(this, i)}
+        src={image} />
     ));
 
     return (
@@ -52,9 +52,11 @@ export default class Gallery extends React.Component {
 }
 
 Gallery.propTypes = {
+  images: PropTypes.arrayOf(PropTypes.string),
   product: PropTypes.object
 };
 
 Gallery.defaultProps = {
+  images: [],
   product: {}
 };

@@ -14,7 +14,7 @@ const Breadcrumb = (props) => {
       {breadcrumbs}
     </div>
   );
-}
+};
 
 Breadcrumb.propTypes = {
   links: PropTypes.arrayOf(
