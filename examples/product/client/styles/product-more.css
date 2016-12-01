@@ -4,8 +4,10 @@
   background-color: var(--gray-lighter);
   box-sizing: border-box;
   height: 350px;
-  padding: 20px;
   margin: 20px 0;
+  overflow: hidden;
+  padding: 20px;
+  white-space: nowrap;
   width: 100%;
 }
 
@@ -29,4 +31,36 @@
   height: 266px;
   vertical-align: top;
   width: 168px;
+  white-space: normal;
+}
+
+.productMoreItemsItemImage {
+  display: block;
+  height: 144px;
+  margin: 20px auto 10px auto;
+  width: 144px;
+}
+
+.productMoreItemsItemPrice {
+  color: var(--blue);
+  font-size: 1.25em;
+  font-weight: 800;
+  margin-left: 14px;
+}
+
+.productMoreItemsItemPriceCurrency {
+  font-size: 1rem;
+  margin-right: 2px;
+  position: relative;
+  top: -4px;
+}
+
+.productMoreItemsName {
+  font-size: 0.95rem;
+  margin: 6px 0 0 14px;
+}
+
+.productMoreItemsRating {
+  color: var(--blue);
+  margin-left: 14px;
 }

@@ -5,6 +5,9 @@ module.exports = {
       urlPattern: "\/$"
     }, {
       handler: "fastest",
+      urlPattern: "\/collection$"
+    }, {
+      handler: "fastest",
       urlPattern: "^https:\/\/fonts\.googleapis\.com"
     }, {
       handler: "fastest",
