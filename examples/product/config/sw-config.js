@@ -17,6 +17,7 @@ module.exports = {
     logo: "./images/walmart-icon.png",
     title: "Electrode Progressive Product",
     short_name: "Electrode Product",
-    theme_color: "#007dc6"
+    theme_color: "#007dc6",
+    gcm_sender_id: "123456789"
   }
 };
