@@ -1,6 +1,6 @@
 import React, {PropTypes} from "react";
 import {connect} from "react-redux";
-import Advertisement from "./Advertisement";
+import Advertisement from "./advertisement";
 import Header from "./header";
 import Product from "./product";
 

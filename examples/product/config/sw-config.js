@@ -19,7 +19,7 @@ module.exports = {
     background: "#007dc6",
     logo: "./images/walmart-icon.png",
     title: "Electrode Progressive Product",
-    short_name: "Electrode Product",
+    short_name: "PWA Product",
     theme_color: "#007dc6",
     gcm_sender_id: "123456789"
   }

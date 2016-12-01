@@ -5,7 +5,8 @@
   box-sizing: border-box;
   height: 350px;
   margin: 20px 0;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: auto;
   padding: 20px;
   white-space: nowrap;
   width: 100%;
