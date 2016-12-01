@@ -18,6 +18,9 @@
           }
         }
       }
+    },
+    "collection": {
+      "module": "./server/plugins/collection"
     }
   }
 }

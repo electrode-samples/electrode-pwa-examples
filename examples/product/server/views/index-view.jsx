@@ -63,6 +63,7 @@ function storeInitializer(req) {
             price: "$53.00"
           }],
           madeBy: "Sony",
+          moreCollection: [],
           reviewCount: 15,
           shippedByMessage: "Sold & Shipped by",
           shippedByLink: {
