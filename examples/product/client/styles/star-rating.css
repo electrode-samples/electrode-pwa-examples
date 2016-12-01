@@ -1,0 +1,11 @@
+@import "./variables.css";
+
+.starRating {
+  & i {
+    color: var(--yellow);
+    cursor: pointer;
+    font-size: 1rem;
+    position: relative;
+    top: 2px;
+  }
+}

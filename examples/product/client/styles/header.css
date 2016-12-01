@@ -1,0 +1,17 @@
+@import "./variables.css";
+
+.header {
+  background-color: var(--blue);
+  box-sizing: border-box;
+  font-weight: 600;
+}
+
+.headerWrapper {
+  position: relative;
+}
+
+@media (max-width: 1080px) {
+  .header {
+    padding: 10px;
+  }
+}

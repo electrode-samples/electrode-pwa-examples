@@ -1,0 +1,38 @@
+@import "./variables.css";
+
+.breadcrumb {
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.breadcrumbLink {
+  transition: opacity 0.25s;
+
+  & a {
+    color: var(--blue);
+    margin-right: 6px;
+    text-decoration: none;
+  }
+
+  & i {
+    font-size: 0.85rem;
+    margin-right: 6px;
+    vertical-align: middle;
+  }
+
+  &:last-child {
+    & i {
+      display: none;
+    }
+  }
+
+  &:hover {
+    opacity: 0.75;
+  }
+}
+
+@media (max-width: 1080px) {
+  .breadcrumb {
+    display: none;
+  }
+}

@@ -1,0 +1,21 @@
+@import "./variables.css";
+
+.headerLogo {
+  background-color: var(--blue);
+  background-image: url("../images/walmart-logo.svg");
+  display: inline-block;
+  height: 60px;
+  margin-left: 20px;
+  width: 200px;
+}
+
+@media (max-width: 1080px) {
+  .headerLogo {
+    background-size: cover;
+    box-sizing: border-box;
+    display: block;
+    height: 24px;
+    margin: 0 auto 8px auto;
+    width: 98px;
+  }
+}

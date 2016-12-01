@@ -1,0 +1,54 @@
+@import "./variables.css";
+
+.productGallery {
+  box-sizing: border-box;
+  display: inline-block;
+  vertical-align: top;
+  width: 60%;
+}
+
+.productGalleryTitle {
+  font-size: 1.6rem;
+}
+
+.productGalleryMeta {
+  font-size: 0.85rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+
+  & a {
+    color: var(--blue);
+    text-decoration: none;
+    transition: opacity 0.25s;
+
+    &:hover {
+      opacity: 0.75;
+      text-decoration: underline;
+    }
+  }
+}
+
+.productGalleryMetaSection {
+  margin-left: 12px;
+}
+
+@media (max-width: 1080px) {
+  .productGallery {
+    display: block;
+    width: 100%;
+  }
+
+  .productGalleryTitle {
+    font-size: 1.25rem;
+  }
+
+  .productGalleryMetaSection {
+    &:nth-child(3) {
+      display: none;
+    }
+
+    &:nth-child(4) {
+      display: none;
+    }
+  }
+}

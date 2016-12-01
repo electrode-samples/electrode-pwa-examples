@@ -1,0 +1,73 @@
+@import "./variables.css";
+
+.headerSearch {
+  display: inline-block;
+  margin: 6px 0 0 60px;
+  vertical-align: top;
+  width: 55%;
+}
+
+.headerSearchCategories {
+  background-color: var(--gray);
+  border-radius: 100px 0 0 100px;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
+  padding: 10px 0 0 16px;
+  vertical-align: top;
+  width: 64px;
+
+  & i {
+    color: var(--blue);
+    vertical-align: middle;
+  }
+}
+
+.headerSearchInput {
+  border: 0;
+  box-sizing: border-box;
+  height: 40px;
+  outline: none;
+  padding-left: 10px;
+  vertical-align: top;
+  width: 70%;
+}
+
+.headerSearchButton {
+  background-color: var(--yellow);
+  border-radius: 0 100px 100px 0;
+  box-sizing: border-box;
+  cursor: pointer;
+  display: inline-block;
+  height: 40px;
+  padding-top: 8px;
+  text-align: center;
+  vertical-align: top;
+  width: 50px;
+}
+
+@media (max-width: 1080px) {
+  .headerSearch {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .headerSearchCategories {
+    display: none;
+  }
+
+  .headerSearchInput {
+    border-radius: 100px 0 0 100px;
+    height: 30px;
+    width: 90%;
+  }
+
+  .headerSearchButton {
+    padding-top: 4px;
+    height: 30px;
+    width: 10%;
+  }
+}
+

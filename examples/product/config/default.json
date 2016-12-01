@@ -1,0 +1,26 @@
+{
+  "plugins": {
+    "electrode-csrf-jwt": {
+      "options": {
+        "secret": "shhhhhh",
+        "expiresIn": 60
+      }
+    },
+    "webapp": {
+      "module": "./server/plugins/webapp",
+      "options": {
+        "pageTitle": "Electrode Progressive Product",
+        "paths": {
+          "/{args*}": {
+            "content": {
+              "module": "./server/views/index-view"
+            }
+          }
+        }
+      }
+    },
+    "collection": {
+      "module": "./server/plugins/collection"
+    }
+  }
+}

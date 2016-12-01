@@ -1,0 +1,10 @@
+.advertisement {
+  text-align: center;
+  width: 100%;
+}
+
+@media (max-width: 1080px) {
+  .advertisement {
+    display: none;
+  }
+}

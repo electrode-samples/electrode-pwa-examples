@@ -1,0 +1,64 @@
+@import "./variables.css";
+
+.headerAccount {
+  color: var(--white);
+  float: right;
+  height: 50px;
+  margin-right: 40px;
+  padding-top: 10px;
+  vertical-align: middle;
+  text-align: right;
+}
+
+.headerAccountLogin {
+  display: inline-block;
+}
+
+.headerAccountMyAccount {
+  & i {
+    color: var(--yellow);
+    font-size: 1.4rem;
+    vertical-align: middle;
+  }
+}
+
+.headerAccountMyAccountLink {
+  cursor: pointer;
+  transition: opacity 0.25s;
+
+  &:hover {
+    opacity: 0.75;
+    text-decoration: underline;
+  }
+}
+
+.headerAccountGreeting {
+  color: var(--yellow);
+  font-size: 0.85rem;
+}
+
+.headerAccountCart {
+  display: inline-block;
+  border-left: 1px solid #3da1e0;
+  box-sizing: border-box;
+  cursor: pointer;
+  height: 40px;
+  line-height: 40px;
+  margin-left: 10px;
+  padding: 6px 0 0 10px;
+  transition: opacity 0.25s;
+
+  &:hover {
+    opacity: 0.75;
+  }
+
+  & i {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 1080px) {
+  .headerAccount {
+    display: none;
+  }
+}
