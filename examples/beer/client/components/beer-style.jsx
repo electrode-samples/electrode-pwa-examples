@@ -42,10 +42,8 @@ class BeerStyle extends React.Component {
 
           <h1 style={styles.header}>This Beer's Style</h1>
           <p style={styles.subText}>{beerStyleDesc}</p>
-
-          <h1 style={styles.availableHeader}></h1>
-          <div style={styles.root}>
-          </div>
+          <h1 style={styles.availableHeader} />
+          <div style={styles.root} />
 
           <Footer />
         </div>

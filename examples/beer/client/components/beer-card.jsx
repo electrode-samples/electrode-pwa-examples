@@ -13,14 +13,17 @@ const styles = {
   }
 };
 
+const SRM_HIGH = 20;
+const SRM_LOW = 10;
+
 /*eslint brace-style: 0*/
 export class BeerCard extends React.Component {
   render() {
     let beerImage = lightBeerImage;
-    if (this.props.beer.srmMax > 10 && this.props.beer.srmMax < 20) {
+    if (this.props.beer.srmMax > SRM_LOW && this.props.beer.srmMax < SRM_HIGH) {
       beerImage = amberBeerImage;
     }
-    else if (this.props.beer.srmMax > 20) {
+    else if (this.props.beer.srmMax > SRM_HIGH) {
       beerImage = darkBeerImage;
     }
 
