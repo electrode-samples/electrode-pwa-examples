@@ -13,9 +13,10 @@ module.exports = {
       handler: "fastest",
       urlPattern: "^https:\/\/fonts\.gstatic\.com"
     }],
-    staticFileGlobs: ['dist/js/*.{js,css,png,svg,jpg,gif}']
+    staticFileGlobs: ['dist/js/*/**']
   },
   manifest: {
+    background: "#007dc6",
     background_color: "#007dc6",
     logo: "./images/walmart-icon.png",
     title: "Electrode Progressive Product",

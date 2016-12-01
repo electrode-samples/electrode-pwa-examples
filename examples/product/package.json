@@ -23,9 +23,10 @@
     "build": "gulp build",
     "coverage": "gulp check",
     "dev": "gulp dev",
+    "hot": "gulp hot",
+    "postinstall": "npm run build",
     "start": "gulp server",
-    "test": "gulp check",
-    "hot": "gulp hot"
+    "test": "gulp check"
   },
   "engines": {
     "node": "^7.0.0"
