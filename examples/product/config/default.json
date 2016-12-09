@@ -7,7 +7,7 @@
       }
     },
     "webapp": {
-      "module": "./server/plugins/webapp",
+      "module": "electrode-react-webapp",
       "options": {
         "pageTitle": "Electrode Progressive Product",
         "paths": {
@@ -21,6 +21,9 @@
     },
     "collection": {
       "module": "./server/plugins/collection"
+    },
+    "pwa": {
+      "module": "./server/plugins/pwa"
     }
   }
 }

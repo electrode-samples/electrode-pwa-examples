@@ -13,7 +13,9 @@ module.exports = {
       handler: "fastest",
       urlPattern: "^https:\/\/fonts\.gstatic\.com"
     }],
-    staticFileGlobs: ['dist/**/*']
+    cacheId: "electrodeProgressiveProduct",
+    importScripts: ['./sw-events.js'],
+    staticFileGlobs: ["dist/js/*.{js,css,png,jpg,svg}"]
   },
   manifest: {
     background: "#007dc6",
