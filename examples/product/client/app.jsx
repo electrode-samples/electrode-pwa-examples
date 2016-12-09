@@ -11,9 +11,9 @@ import {routes} from "./routes";
 import "./styles/base.css";
 
 
-require.ensure(["./register-service-worker"], (require) => {
-  require("./register-service-worker")();
-}, "register-service-worker");
+require.ensure(["./sw-registration"], (require) => {
+  require("./sw-registration")();
+}, "sw-registration");
 
 const enhancer = compose(
   // Add middlewares you want to use in development:
