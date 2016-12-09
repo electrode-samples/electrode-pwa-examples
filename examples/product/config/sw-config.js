@@ -13,7 +13,10 @@ module.exports = {
       handler: "fastest",
       urlPattern: "^https:\/\/fonts\.gstatic\.com"
     }],
-    staticFileGlobs: ['dist/**/*']
+    cacheId: "electrodeProgressiveProduct",
+    staticFileGlobs: ['dist/**/*'],
+    stripPrefix: "dist/js/",
+    importScripts: ['./sw.js']
   },
   manifest: {
     background: "#007dc6",
